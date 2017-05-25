@@ -1,0 +1,192 @@
+/*POLICES*/
+
+@font-face {
+	font-family: "menuPolice";
+	src: url('../Polices/GearedSlab-Light.ttf');
+}
+
+@font-face {
+	font-family: "policeComment";
+	src: url('../Polices/RosewoodFill.ttf');
+}
+
+/*FIN POLICES*/
+
+
+
+/*GENERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size:44px;
+}
+
+h2{
+    font-size:24px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: #cbd0d3;
+    background-size: 100%;
+    display:block;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    
+}
+
+.wrapper{
+    width: 1070px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.wrapperAnnonces{
+    width: 1070px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/*HEADER*/
+header{
+    height: 90px;
+    background-color: #F72758;
+    background-image: url(../Images/TESTEURDIV.png);
+    border-bottom: 2px solid #4B2121;
+}
+
+header nav{
+    padding: 0; 
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    margin-top: 26px;
+    float:center;
+    display: inline-block; list-style: none; /* nécessaire pour IE7 */
+    vertical-align:top;
+}
+
+header nav ul li a {
+    text-transform: uppercase; /*Met le texte en maj*/
+    margin-right: 40px;
+    text-decoration: none; /*Permet d'enlever le surlignage des liens de menu*/
+    color:#FFFFFF;
+    font-size:30px;
+    font-family: "menuPolice";
+    margin-top: 24px;
+}
+
+header nav ul li a:hover {
+    color: rgb(10,47,55);
+    text-decoration: overline;
+}
+
+header nav ul li a img{
+    margin-top: -20px;
+    margin-right: 0px //A voir
+}
+
+/* IMAGE MENU  */
+#imgMenu{
+    position:relative;
+    z-index: 20;
+}
+
+
+/*  FOOTER  */
+
+footer{
+    height: 100px;
+    background-color: #000000;
+    background-image: url(../Images/footerImg.png);
+    border-top: 1px solid grey;
+    bottom: 0px;
+    width: 100%;
+   // position: fixed;
+   // display : table-row;
+	height: 100px; /* à titre d'exemple */
+    margin-top: 60px;
+}
+
+
+/**************************************************/
+#rchBarre{
+    background-color:beige;
+    padding-top: 60px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+
+.annoncesDiv{
+    background-color: aliceblue;
+    padding: 10px;
+    border-color:black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+#wrapperAnnoncesImg{
+    display: inline-block;
+    width: 240px;
+}
+
+#wrapperAnnoncesTxt{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+
+.recettes{
+    background-color: whitesmoke;
+    width: 320px;
+    height: 380px;
+    border-radius: 10px;
+    position:relative;
+    margin-top: 20px;
+    float: left;
+    margin-right: 20px;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align:left;
+}
+
+.recettes #imgRec{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%; 
+    height: 60%; 
+    object-fit: cover;
+}
+
+.recettes #imgNote{
+    float:right;
+    margin-right: 154px;
+}
+
+.nomRecette{
+    text-align: center;
+    margin-bottom: 0;
+    color: aliceblue;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+}

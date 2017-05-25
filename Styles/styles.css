@@ -1,0 +1,335 @@
+/*POLICES*/
+
+@font-face {
+	font-family: "menuPolice";
+	src: url('../Polices/GearedSlab-Light.ttf');
+}
+
+@font-face {
+	font-family: "policeComment";
+	src: url('../Polices/RosewoodFill.ttf');
+}
+
+/*FIN POLICES*/
+
+
+
+/*GENERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size:44px;
+}
+
+h2{
+    font-size:24px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background: url(../Images/fontImg.jpg) no-repeat center fixed;
+    background-size: 100%;
+    display:block;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    
+}
+
+.wrapper{
+    width: 1070px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/*HEADER*/
+header{
+    height: 90px;
+    background-color: #F72758;
+    background-image: url(../Images/TESTEURDIV.png);
+    border-bottom: 2px solid #4B2121;
+}
+
+header nav{
+    padding: 0; 
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    margin-top: 26px;
+    float:center;
+    display: inline-block; list-style: none; /* nécessaire pour IE7 */
+    vertical-align:top;
+}
+
+header nav ul li a {
+    text-transform: uppercase; /*Met le texte en maj*/
+    margin-right: 40px;
+    text-decoration: none; /*Permet d'enlever le surlignage des liens de menu*/
+    color:#FFFFFF;
+    font-size:30px;
+    font-family: "menuPolice";
+    margin-top: 24px;
+}
+
+header nav ul li a:hover {
+    color: rgb(10,47,55);
+    text-decoration: overline;
+}
+
+header nav ul li a img{
+    margin-top: -20px;
+    margin-right: 0px //A voir
+}
+
+/* IMAGE MENU  */
+#imgMenu{
+    position:relative;
+    z-index: 20;
+}
+
+
+/*  CARTE  */
+#carteMap{
+    margin-top: 60px;
+    height: 560px; 
+    width: 400px;
+    border: 3px solid rgb(200,39,77);
+    border-radius: 3px;
+    float:left;
+}
+
+#rechercheCarte{
+    background-color: #FFFFFF;
+    height: 24px;
+    margin: 0 0;
+}
+
+#RchVille{
+    width:110px;
+    height: 24px;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 0;
+    float:left;
+    border-style: none;
+    font-size: 16px;
+    font-family:Arial;
+}
+
+#RchCP{
+    width: 50px;
+    height: 24px;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 0;
+    float:left;
+    border-style: none;
+    font-size: 16px;
+    font-family:Arial;
+}
+
+#submitRch
+{
+    width: 60px;
+    vertical-align: top;
+    float:right;
+    height: 24px;
+    border-style: none;
+    background-image: url("../Images/search.png");
+    font-weight: bold;
+    font-size:14px;
+}
+
+#submitRch:Hover
+{
+    vertical-align: top;
+    float:right;
+    height: 24px;
+    border-style: none;
+    background-color: #F72758;
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size:14px;
+}
+
+#rchSliderValue{
+    vertical-align:middle;
+    font-size:16px;
+    font-family: Arial;
+}
+
+#RchSlider{
+   background: rgba(0,0,0,0);
+   vertical-align: top;
+   float:left;
+    margin:0 0;
+}   
+
+/*  COMMENTAIRES */
+
+#comments{
+    display: inline-block; list-style: none; /* nécessaire pour IE7 */
+}
+
+#comment_1{
+    
+    margin-top: 90px;
+    margin-left: -28px;
+    height: 200px;
+    width:640px;
+    border: 3px solid rgb(200,39,77);
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0.7);
+    color: #FFFFFF;
+    float:left;
+    font-family: "policeComment";
+    padding-top:24px; 
+    padding-bottom:24px;
+    padding-left: 40px;
+    padding-right:0px;  
+    z-index: 1;
+}
+
+#comment_2{
+    margin-top: 2px;
+    margin-left: -28px;
+    height: 360px;
+    width: 640px;
+    border: 3px solid rgb(200,39,77);
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0.7);
+    color: #FFFFFF;
+    float:left;
+    font-family: "policeComment";
+    padding-top:24px; 
+    padding-bottom:24px;
+    padding-left: 40px;
+    padding-right:0px;  
+}
+
+.commentPink{
+    font-size:22px;
+    color:rgb(252,179,76); 
+    text-decoration: underline;
+}
+
+.commentPoint{
+    font-size:22px;
+    color:rgb(252,179,76); 
+    text-decoration: none;
+}
+
+/*  FOOTER  */
+
+footer{
+    height: 100px;
+    background-color: #000000;
+    background-image: url(../Images/footerImg.png);
+    border-top: 1px solid grey;
+    bottom: 0px;
+    width: 100%;
+   // position: fixed;
+   // display : table-row;
+	height: 100px; /* à titre d'exemple */
+    margin-top: 60px;
+}
+
+
+
+
+
+/* CSS du slider */
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 120px;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 24px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #FFFFFF;
+  background: #FFFFFF;
+  border-radius: 0px;
+  border: 0px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 22px;
+  width: 40px;
+  border-radius: 0px;
+  background: #C51547;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: 1px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #FFFFFF;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 24px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #FFFFFF;
+  background: #FFFFFF;
+  border-radius: 0px;
+  border: 0px solid #000000;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 24px;
+  width: 40px;
+  border-radius: 0px;
+  background: #C51547;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 24px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #FFFFFF;
+  border: 0px solid #000000;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #FFFFFF;
+}
+input[type=range]::-ms-fill-upper {
+  background: #FFFFFF;
+  border: 0px solid #000000;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #FFFFFF;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 24px;
+  width: 40px;
+  border-radius: 0px;
+  background: #C51547;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #FFFFFF;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #FFFFFF;
+}
+/* FIN CSS slider */

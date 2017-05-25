@@ -1,0 +1,200 @@
+/*POLICES*/
+
+@font-face {
+	font-family: "menuPolice";
+	src: url('../Polices/GearedSlab-Light.ttf');
+}
+
+@font-face {
+	font-family: "policeComment";
+	src: url('../Polices/RosewoodFill.ttf');
+}
+
+/*FIN POLICES*/
+
+
+
+/*GENERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size:44px;
+}
+
+h2{
+    font-size:24px;
+}
+
+label{
+    font-weight: bold;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: ;
+    background-size: 100%;
+    display:block;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    color: black;
+    
+}
+
+.wrapper{
+    width: 1070px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.wrapperAnnonces{
+    width: 1070px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/*HEADER*/
+header{
+    height: 90px;
+    background-color: #F72758;
+    background-image: url(../Images/TESTEURDIV.png);
+    border-bottom: 2px solid #4B2121;
+}
+
+header nav{
+    padding: 0; 
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    margin-top: 26px;
+    float:center;
+    display: inline-block; list-style: none; /* nécessaire pour IE7 */
+    vertical-align:top;
+}
+
+header nav ul li a {
+    text-transform: uppercase; /*Met le texte en maj*/
+    margin-right: 40px;
+    text-decoration: none; /*Permet d'enlever le surlignage des liens de menu*/
+    color:#FFFFFF;
+    font-size:30px;
+    font-family: "menuPolice";
+    margin-top: 24px;
+}
+
+header nav ul li a:hover {
+    color: rgb(10,47,55);
+    text-decoration: overline;
+}
+
+header nav ul li a img{
+    margin-top: -20px;
+    margin-right: 0px //A voir
+}
+
+/* IMAGE MENU  */
+#imgMenu{
+    position:relative;
+    z-index: 20;
+}
+
+
+/*  FOOTER  */
+
+footer{
+    height: 100px;
+    background-color: #000000;
+    background-image: url(../Images/footerImg.png);
+    border-top: 1px solid grey;
+    bottom: 0px;
+    width: 100%;
+   // position: fixed;
+   // display : table-row;
+	height: 100px; /* à titre d'exemple */
+    margin-top: 60px;
+}
+
+
+/**************************************************/
+
+#Annonce{
+    width: 1070px;
+    margin: 0 auto;
+    padding: 0 0px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1px;
+    margin-top: 80px;
+}
+
+#headerAnnonce{
+    background-color: #2c3e50;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 8px; 
+}
+
+#PhotosAnnonce{
+    padding: 10px;
+    margin-bottom: 200px;
+}
+
+#Photo1 img{
+    width: 25%; 
+    height: 200px; 
+    object-fit: cover;
+    float: left;
+    
+}
+#Photo2 img{
+    width: 25%; 
+    height: 200px; 
+    object-fit: cover;
+    float: left;
+}
+#Photo3 img{
+    width: 25%; 
+    height: 200px; 
+    object-fit: cover;
+    float: left;
+}
+#Photo4 img{
+    width: 25%; 
+    height: 200px; 
+    object-fit: cover;
+    float: left;
+}
+
+.txtAnnonceUser{
+    border-top: 1px solid grey;
+    padding: 4px;
+}
+
+.txtAnnonce{
+    border-collapse: separate;
+    border-spacing: 0px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.txtAnnonce td{
+    border-top: 1px solid grey;
+    font-size: 18px;
+    padding: 6px;
+}
+
+.orangeTab{
+    color: orangered;
+    font-weight: bold;
+    width: 16%;
+    vertical-align: top;
+}
+
+

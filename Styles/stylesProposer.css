@@ -1,0 +1,205 @@
+/*POLICES*/
+
+@font-face {
+	font-family: "menuPolice";
+	src: url('../Polices/GearedSlab-Light.ttf');
+}
+
+@font-face {
+	font-family: "policeComment";
+	src: url('../Polices/RosewoodFill.ttf');
+}
+
+/*FIN POLICES*/
+
+
+
+/*GENERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size:44px;
+}
+
+h2{
+    font-size:24px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: #cbd0d3;
+    background-size: 100%;
+    display:block;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    
+}
+
+.wrapper{
+    width: 1070px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+/*HEADER*/
+header{
+    height: 90px;
+    background-color: #F72758;
+    background-image: url(../Images/TESTEURDIV.png);
+    border-bottom: 2px solid #4B2121;
+}
+
+header nav{
+    padding: 0; 
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    margin-top: 26px;
+    float:center;
+    display: inline-block; list-style: none; /* nécessaire pour IE7 */
+    vertical-align:top;
+}
+
+header nav ul li a {
+    text-transform: uppercase; /*Met le texte en maj*/
+    margin-right: 40px;
+    text-decoration: none; /*Permet d'enlever le surlignage des liens de menu*/
+    color:#FFFFFF;
+    font-size:30px;
+    font-family: "menuPolice";
+    margin-top: 24px;
+}
+
+header nav ul li a:hover {
+    color: rgb(10,47,55);
+    text-decoration: overline;
+}
+
+header nav ul li a img{
+    margin-top: -20px;
+    margin-right: 0px //A voir
+}
+
+/* IMAGE MENU  */
+#imgMenu{
+    position:relative;
+    z-index: 20;
+}
+
+
+/*  FOOTER  */
+
+footer{
+    height: 100px;
+    background-color: #000000;
+    background-image: url(../Images/footerImg.png);
+    border-top: 1px solid grey;
+    bottom: 0px;
+    width: 100%;
+   // position: fixed;
+   // display : table-row;
+	height: 100px; /* à titre d'exemple */
+    margin-top: 60px;
+}
+
+
+#annonce{
+    border-color: darkgray;
+    border-style: solid;
+    border-width:  1px;
+    background-color: aliceblue;
+    width: 1070px;
+    margin: 0 auto;
+    padding: 0 0;
+    margin-top: 100px;
+}
+
+#annonceZone{
+    background-color: #2c3e50;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 8px; 
+}
+
+#txtZone{
+    padding: 8px;
+    font-size: 18px;
+}
+
+#titreAnnonce{
+    width: 400px;
+    height: 30px;
+    font-size: 20px;
+    padding: 2px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+}
+
+#texteAnnoce{
+    width: 600px;
+    height: 200px;
+    font-size: 20px;
+    padding: 2px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+}
+
+#qteAnnonce{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    padding: 2px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+}
+
+#qteLot{
+    width: 60px;
+    height: 40px;
+    font-size: 20px;
+    padding: 2px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+}
+
+#prix{
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    padding: 2px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+}
+
+#btnSubmit{
+    width: 140px;
+    height: 40px;
+    font-size: 20px;
+    padding: 2px;
+    border-radius: 4px;
+    border-style: none;
+    background-color:#16a085;
+    color: aliceblue;
+}
+
+#btnSubmit:hover{
+background-color: #40d47e;
+}

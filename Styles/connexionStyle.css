@@ -1,0 +1,353 @@
+body{
+    margin: 0;
+    margin-top: 20px;
+    background: url(../Images/connexionBC.jpg) no-repeat center fixed;
+    background-size: 100%;
+    display:block;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+}
+
+input[type="checkbox"]{
+    width: 18px; height: 18px;
+   
+}
+
+input[type="radio"]{
+    width: 18px; height: 18px;
+   
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    darkgray;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    darkgray;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    darkgray;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    darkgray;
+}
+
+#header{
+    margin-left: 200px;
+    margin-top: 30px;
+    display: inline;
+}
+
+#loginSwitch{
+    width: auto;
+    display: inline;
+    float: right;
+    margin-right:200px; 
+    margin-top: 60px;
+}
+
+#connexionSwitch{
+    width: 50%;
+    background-color: rgba(218,63,54, 0.2);
+    text-align: center;
+    opacity: 1;
+    padding-right: 30px;
+    padding-left: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: white;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-color: white;
+    font-family: arial;
+    font-weight: bold;
+    display: inline;
+    font-size: 20;
+}
+
+#inscriptionSwitch{
+    width: 50%;
+    text-align: center;
+    opacity: 1;
+    color: white;
+    background-color: rgb(218,63,54);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-color: white;
+    font-family: arial;
+    font-weight: bold;
+    display: inline;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 20;
+}
+
+
+#formulaire{
+    margin-left: ;
+    margin-right: ;
+    background-color: rgba(0,0,0,0.4);
+    padding: 22px;
+    border-radius: 2px;
+    margin: 0px auto;
+    width:470px;
+    border-style: outset;
+    border-color: rgb(27,185,196);
+    margin-top: 100px;
+}
+
+#formName{
+    text-align: left;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
+#formulaire input[type=text]{
+    font-size: 22px;
+    border-style: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    padding:6px;
+    width: 414px;
+    display: inline;
+}
+
+#formulaire input[type=password]{
+    font-size: 22px;
+    border-style: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    padding:6px;
+    width: 414px;
+    display: inline;
+}
+
+#formulaire input[type=email]{
+    font-size: 22px;
+    border-style: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    padding:6px;
+    width: 414px;
+    display: inline;
+}
+
+#pEmail{
+    text-align: left;
+    font-family: Arial;
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+#logEmail{
+    text-align: left;
+}
+
+#enveloppeCo{
+    display: inline;
+    float: left;
+}
+
+#pMdp{
+    text-align: left;
+    font-family: Arial;
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+#logMdp{
+    text-align: left;
+}
+
+#submitLogin{
+    background-color: rgba(180,255,100,0.8);
+    border-style: none;
+    padding: 6px;
+    width: 470px;
+    margin: 0;
+    font-size: 22px;
+    color: white;
+    border-radius: 1px;
+    margin-bottom: 4px;
+}
+
+#submitLogin:hover{
+    background-color: aqua;
+}
+
+#mdpSave{
+    color: white;
+    font-family: Arial;
+    margin-top: 10px;
+    display: inline;
+    margin-right:150px;
+}
+
+#mdpSave input[type=checkbox]{
+    width: 18px;
+    height: 18px;
+}
+
+#mdpPerdu{
+    color: white;
+    font-family: Arial;
+    margin-top: 10px;
+    font-size: 16px;
+    display: inline;
+}
+
+
+#formulaireInscr{
+    margin-left: ;
+    margin-right: ;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    border-radius: 2px;
+    margin: 0px auto;
+    width:1100px;
+    border-style: outset;
+    border-color: rgb(27,185,196);
+    display: none;
+    height: 300px;
+    margin-top: 50px;
+
+}
+
+#formulaireInscr input[type=text]:not(#adresse3):not(#adresse2){
+    font-size: 22px;
+    border-style: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    padding:6px;
+    width: 414px;
+    margin-top: 4px;
+    display: inline;
+}
+
+#formulaireInscr input[type=password]{
+    font-size: 22px;
+    border-style: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    padding:6px;
+    width: 414px;
+    display: inline;
+    margin-top: 4px;
+}
+
+#formulaireInscr input[type=email]{
+    font-size: 22px;
+    border-style: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    padding:6px;
+    width: 414px;
+    display: inline;
+    margin-top: 4px;
+}
+
+#formulaireInscr input[type=tel]{
+    font-size: 22px;
+    border-style: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    padding:6px;
+    width: 414px;
+    display: inline;
+    margin-top: 4px;
+}
+
+#formulaireInscr label{
+    font-family: Arial;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#colone1{
+    display: inline;
+    float: left;
+    margin-left:20px;
+    margin-top: 20px;
+}
+
+#colone2{
+    display: inline;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+.ligne_verticale
+{
+    width:0px;
+    border:2px solid aqua;
+    height: 290px;
+    display:inline-block;
+    margin-left: 100px;
+    border-radius:4px;
+}
+
+#adresse3{
+    font-size: 22px;
+    border-style: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    padding:6px;
+    width: 70px;
+    display: inline;
+    margin-top: 4px;
+    text-align: center;
+}
+
+#adresse2{
+    font-size: 22px;
+    border-style: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    padding:6px;
+    width: 328px;
+    display: inline;
+    margin-top: 4px;
+}
+
+#sub2{
+    background-color: rgba(180,255,100,0.8);
+    border-style: none;
+    padding: 6px;
+    width: 426px;
+    margin: 0;
+    font-size: 22px;
+    color: white;
+    border-radius: 1px;
+    margin-bottom: 4px;
+    text-transform: uppercase
+}
+
+
+#sub2:hover{
+    background-color: aqua;
+}
+
+footer{
+    height: 100px;
+    background-color: #000000;
+    background-image: url(../Images/footerImg.png);
+    border-top: 1px solid grey;
+    bottom: 0px;
+    width: 100%;
+    position: fixed;
+   // display : table-row;
+	height: 100px; /* à titre d'exemple */
+    margin-top: 60px;
+}
